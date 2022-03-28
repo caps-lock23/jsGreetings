@@ -3,12 +3,17 @@
 //if hour is between 12am to 6pm: goodafternoon
 //if hour is between 6pm to 12pm: goodevening
 
-if (condition) {
-  statement;
-} else if (anotherCondition) {
-  statement;
-} else if (anotherCondition) {
-  statement;
+let hour = parseInt(prompt("pick hour"))
+
+function currentHour() {
+	if (hour >= 1 && hour < 12) {
+  console.log("goodmorning");
+} else if (hour >= 12 && hour < 18) {
+  console.log("goodafternoon");
 } else {
-  statement;
+  console.log("goodevening")
 }
+}
+
+currentHour()
+
